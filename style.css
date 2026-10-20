@@ -1,0 +1,456 @@
+
+:root {
+    --brown: #543b2b;
+    --gold: #c8a45d;
+    --gold-light: #f0dfb2;
+    --olive: #777747;
+    --olive-light: #b9bd87;
+    --cream: #fffaf0;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--brown);
+    line-height: 1.8;
+}
+
+/* الجزء العلوي */
+.hero {
+    background: var(--brown);
+    min-height: 420px;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+
+/* خلفية صورة اللوجو */
+.logo-container {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url("logo1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* اللوجو نفسه */
+.hero .logo {
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: transparent;
+    padding: 0;
+    display: block;
+}
+
+/* عنوان المحل */
+.hero h1 {
+    margin: 10px 0;
+    color: var(--olive-light);
+}
+
+/* وصف المحل */
+.hero p {
+    color: #f5e6c8;
+    line-height: 1.9;
+    margin: 8px 0 20px;
+}
+
+/* زر التواصل */
+.hero .contact-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 25px;
+    background-color: var(--gold-light);
+    color: var(--brown);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .contact-button:hover {
+    background-color: var(--gold);
+}
+
+/* عنوان اختيار المنيو */
+.menu-title {
+    text-align: center;
+    color: var(--olive);
+    margin: 30px 10px 20px;
+}
+
+/* الصفحة الرئيسية */
+.home-menu {
+    padding: 1px 0 20px;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 900px;
+    padding: 0 18px 35px;
+    margin: auto;
+}
+
+.choice-card {
+    display: block;
+    background: var(--white);
+    border: 1px solid #e6d9bf;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(84, 59, 43, 0.10);
+    text-decoration: none;
+    color: var(--brown);
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.choice-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(84, 59, 43, 0.16);
+}
+
+/* صور كوفر المنيوهات بالصفحة الرئيسية */
+.choice-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* كوفر منيو المشروبات */
+.choice-card img[src="منيو المشروبات.jpeg"] {
+    height: 300px;
+    object-position: center;
+}
+
+.choice-card h2 {
+    color: var(--olive);
+    font-size: 22px;
+    margin: 12px 8px 5px;
+}
+
+.choice-card p {
+    margin: 5px 14px 15px;
+}
+
+.choice-button {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--brown);
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* قسم جلسات العائلات */
+.family-section {
+    max-width: 1100px;
+    margin: 15px auto 40px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* عنوان وجملة قسم العائلات */
+.family-heading {
+    max-width: 780px;
+    margin: 0 auto 25px;
+    padding: 20px;
+    background: #f3e7d5;
+    border: 1px solid #e6d9bf;
+    border-radius: 20px;
+}
+
+.family-decoration {
+    color: var(--gold);
+    font-size: 25px;
+}
+
+.family-heading h2 {
+    color: var(--olive);
+    font-size: 30px;
+    margin: 5px 0 12px;
+}
+
+.family-heading p {
+    margin: 0;
+    line-height: 2.1;
+    font-size: 17px;
+}
+
+/* الصورة الرئيسية لقسم العائلات */
+.family-cover {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    border: 4px solid var(--gold-light);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(84, 59, 43, 0.12);
+}
+
+.family-cover img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* معرض صور العائلات */
+.family-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.family-photo {
+    height: 250px;
+    overflow: hidden;
+    border: 3px solid var(--white);
+    border-radius: 16px;
+    background: #f3e7d5;
+    box-shadow: 0 4px 13px rgba(84, 59, 43, 0.14);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.family-photo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(84, 59, 43, 0.18);
+}
+
+.family-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.family-footer {
+    color: var(--olive);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0 0;
+}
+
+/* روابط التنقل */
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.menu-nav a,
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--gold);
+    color: var(--brown);
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.menu-nav a:hover,
+.back-link:hover {
+    background: var(--gold-light);
+}
+
+/* بطاقات الأصناف داخل منيو الحلويات والمشروبات */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    padding: 0 18px 35px;
+    margin: auto;
+}
+
+.dessert-card {
+    background: var(--white);
+    border: 1px solid #e6d9bf;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(84, 59, 43, 0.10);
+}
+
+/* صور منتجات الحلويات والمشروبات */
+.dessert-card img {
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+    display: block;
+}
+.dessert-info {
+    padding: 15px;
+}
+
+.dessert-info h3 {
+    color: var(--olive);
+    margin: 0 0 8px;
+}
+
+.dessert-info p {
+    margin: 7px 0;
+}
+
+.price {
+    color: var(--brown);
+    font-weight: bold;
+}
+
+/* مشاركة المنيو */
+.share-section {
+    text-align: center;
+    margin: 25px 20px 35px;
+    padding: 25px 15px;
+    border-radius: 18px;
+    background: var(--brown);
+    color: var(--white);
+}
+
+.share-section h2 {
+    color: var(--gold-light);
+    margin: 0;
+}
+
+.share-section p {
+    margin: 8px 0 17px;
+}
+
+#shareMenu {
+    border: none;
+    border-radius: 30px;
+    background: var(--gold);
+    color: var(--brown);
+    padding: 13px 28px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#shareMenu:hover {
+    background: var(--gold-light);
+}
+
+#shareStatus {
+    font-size: 13px;
+}
+
+/* نهاية الصفحة */
+footer {
+    text-align: center;
+    background: #e9e0cf;
+    padding: 20px 12px;
+    color: var(--brown);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a:not(.back-link) {
+    color: var(--olive);
+    overflow-wrap: anywhere;
+}
+
+.back-link {
+    margin-top: 12px;
+}
+
+/* تنسيق الهواتف */
+@media (max-width: 600px) {
+    .hero {
+        padding: 25px 14px;
+    }
+
+    .choice-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+
+    /* كوفرات المنيوهات على الهاتف */
+    .choice-card img {
+        height: 240px;
+    }
+
+    .choice-card img[src="منيو المشروبات.jpeg"] {
+        height: 260px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+   /* صور الأصناف داخل المنيو على الهاتف */
+.dessert-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+    .menu-nav {
+        gap: 8px;
+    }
+
+    /* قسم العائلات على الهاتف */
+    .family-section {
+        padding: 20px 12px;
+        margin-top: 5px;
+    }
+
+    .family-heading {
+        padding: 17px 12px;
+    }
+
+    .family-heading h2 {
+        font-size: 25px;
+    }
+
+    .family-heading p {
+        font-size: 15px;
+    }
+
+    .family-cover img {
+        height: 240px;
+    }
+
+    .family-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .family-photo {
+        height: 180px;
+    }
+
+    .family-footer {
+        font-size: 17px;
+    }
+}
