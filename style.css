@@ -21,7 +21,6 @@ body {
     line-height: 1.8;
 }
 
-/* الجزء العلوي */
 .hero {
     background: var(--brown);
     min-height: 420px;
@@ -34,7 +33,6 @@ body {
     border-radius: 0 0 25px 25px;
 }
 
-/* خلفية صورة اللوجو */
 .logo-container {
     width: 170px;
     height: 170px;
@@ -50,7 +48,6 @@ body {
     overflow: hidden;
 }
 
-/* اللوجو نفسه */
 .hero .logo {
     width: 145px;
     height: 145px;
@@ -61,20 +58,17 @@ body {
     display: block;
 }
 
-/* عنوان المحل */
 .hero h1 {
     margin: 10px 0;
     color: var(--olive-light);
 }
 
-/* وصف المحل */
 .hero p {
     color: #f5e6c8;
     line-height: 1.9;
     margin: 8px 0 20px;
 }
 
-/* زر التواصل */
 .hero .contact-button {
     display: inline-block;
     margin-top: 12px;
@@ -91,14 +85,12 @@ body {
     background-color: var(--gold);
 }
 
-/* عنوان اختيار المنيو */
 .menu-title {
     text-align: center;
     color: var(--olive);
     margin: 30px 10px 20px;
 }
 
-/* الصفحة الرئيسية */
 .home-menu {
     padding: 1px 0 20px;
 }
@@ -131,7 +123,6 @@ body {
     box-shadow: 0 8px 20px rgba(84, 59, 43, 0.16);
 }
 
-/* صور كوفر المنيوهات بالصفحة الرئيسية */
 .choice-card img {
     width: 100%;
     height: 250px;
@@ -139,7 +130,6 @@ body {
     display: block;
 }
 
-/* كوفر منيو المشروبات */
 .choice-card img[src="منيو المشروبات.jpeg"] {
     height: 300px;
     object-position: center;
@@ -164,7 +154,6 @@ body {
     font-weight: bold;
 }
 
-/* قسم جلسات العائلات */
 .family-section {
     max-width: 1100px;
     margin: 15px auto 40px;
@@ -172,7 +161,6 @@ body {
     text-align: center;
 }
 
-/* عنوان وجملة قسم العائلات */
 .family-heading {
     max-width: 780px;
     margin: 0 auto 25px;
@@ -199,7 +187,6 @@ body {
     font-size: 17px;
 }
 
-/* الصورة الرئيسية لقسم العائلات */
 .family-cover {
     max-width: 900px;
     margin: 0 auto 25px;
@@ -217,7 +204,6 @@ body {
     object-position: center;
 }
 
-/* معرض صور العائلات */
 .family-gallery {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -256,7 +242,6 @@ body {
     margin: 25px 0 0;
 }
 
-/* روابط التنقل */
 .menu-nav {
     display: flex;
     justify-content: center;
@@ -282,7 +267,6 @@ body {
     background: var(--gold-light);
 }
 
-/* بطاقات الأصناف داخل منيو الحلويات والمشروبات */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -300,7 +284,6 @@ body {
     box-shadow: 0 5px 15px rgba(84, 59, 43, 0.10);
 }
 
-/* صور منتجات الحلويات والمشروبات */
 .dessert-card img {
     width: 100%;
     height: 265px;
@@ -325,7 +308,6 @@ body {
     font-weight: bold;
 }
 
-/* مشاركة المنيو */
 .share-section {
     text-align: center;
     margin: 25px 20px 35px;
@@ -364,7 +346,6 @@ body {
     font-size: 13px;
 }
 
-/* نهاية الصفحة */
 footer {
     text-align: center;
     background: #e9e0cf;
@@ -385,7 +366,6 @@ footer a:not(.back-link) {
     margin-top: 12px;
 }
 
-/* تنسيق الهواتف */
 @media (max-width: 600px) {
     .hero {
         padding: 25px 14px;
@@ -396,7 +376,6 @@ footer a:not(.back-link) {
         max-width: 420px;
     }
 
-    /* كوفرات المنيوهات على الهاتف */
     .choice-card img {
         height: 240px;
     }
@@ -409,7 +388,6 @@ footer a:not(.back-link) {
         grid-template-columns: 1fr;
     }
 
-   /* صور الأصناف داخل المنيو على الهاتف */
 .dessert-card img {
     height: 220px;
     object-fit: cover;
@@ -419,7 +397,6 @@ footer a:not(.back-link) {
         gap: 8px;
     }
 
-    /* قسم العائلات على الهاتف */
     .family-section {
         padding: 20px 12px;
         margin-top: 5px;
